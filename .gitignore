@@ -1,0 +1,11 @@
+.sass-cache/
+node_modules/
+__pycache__/
+.idea/
+.venv/
+static/*
+media/*
+secret.py
+*code-workspace
+launch.json
+.pytest_cache/
