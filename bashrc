@@ -31,10 +31,13 @@ export GPG_TTY=$(tty)
 #scl enable devtoolset-8 -- bash
 #export LFS=/mnt/lfs
 
-source $HOME/.bin/git-prompt.sh
-export PS1='[\u@\[\e[42m\]\h\[\e[0m\] \W$(__git_ps1 " (%s)")]\$ '
+#if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
+#    GIT_PROMPT_ONLY_IN_REPO=1
+#    source "$HOME/.bash-git-prompt/gitprompt.sh"
+#fi
+#export PS1='[\u@\[\e[42m\]\h\[\e[0m\] \W$(__git_ps1 " (%s)")]\$ '
 #export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
-#export PS1="[\u@\h \W]\\$ "
+export PS1="[\u@\h \W]\\$ "
 
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
